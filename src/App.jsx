@@ -18,8 +18,6 @@ class App extends Component {
 
     const clickToEdit = "CLICK TO EDIT";
 
-    // cat.target.location.value = (cat.target.location.value !== "") ? cat.target.location.value : clickToEdit;
-
     const { firstName, lastName, location, company, title, email, phone, notes, img } = cat.target;
 
     // First name and Last name are required
@@ -98,49 +96,49 @@ class App extends Component {
                   </td>
                 </tr>
                 <tr>
-                  <td>Last Name</td>
+                  <td><label for="lastName">Last Name</label></td>
                   <td>
                     <input required name="lastName" id="lastName" />
                   </td>
                 </tr>
                 <tr>
-                  <td>Location</td>
+                  <td><label for="location">Location</label></td>
                   <td>
                     <input name="location" id="location" />
                   </td>
                 </tr>
                 <tr>
-                  <td>Company</td>
+                  <td><label for="company">Company</label></td>
                   <td>
                     <input name="company" id="company" />
                   </td>
                 </tr>
                 <tr>
-                  <td>Title</td>
+                  <td><label for="title">Title</label></td>
                   <td>
                     <input name="title" id="title" />
                   </td>
                 </tr>
                 <tr>
-                  <td>Email</td>
+                  <td><label for="email">Email</label></td>
                   <td>
                     <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="alias@domain.ext" />
                   </td>
                 </tr>
                 <tr>
-                  <td>Phone</td>
+                  <td><label for="phone">Phone</label></td>
                   <td>
                     <input pattern="(999) 999-9999" name="phone" id="phone" title="(999) 999-9999" />
                   </td>
                 </tr>
                 <tr>
-                  <td>Notes</td>
+                  <td><label for="notes">Notes</label></td>
                   <td>
                     <textarea name="notes" id="notes" cols="50" rows="6"></textarea>
                   </td>
                 </tr>
                 <tr>
-                  <td>Image</td>
+                  <td><label for="image">Image</label></td>
                   <td>
                     <input name="img" id="img" type="url" pattern="https?://.+" title="Include http://" />
                   </td>
